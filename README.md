@@ -62,7 +62,7 @@ Thanks for trying out this miner!
 Runs on Windows x64.
 
 LICENSE
-ABASMiner is licensed under the Apache License, Version 2.0 (the "License");
+EraBitcoinMiner is licensed under the Apache License, Version 2.0 (the "License");
 Libraries are included in the Software under the following license terms:
 - libkeccak-tiny https://github.com/coruus/keccak-tiny/
 - Nethereum https://github.com/Nethereum/Nethereum/blob/master/LICENSE.md
@@ -71,96 +71,52 @@ Libraries are included in the Software under the following license terms:
 - Bouncy Castle https://www.bouncycastle.org/licence.html
 
 
-Usage: ABASminer [OPTIONS]
 
+Usage: EraBitcoinMiner [OPTIONS]
 Options:
-
   help                    Display this help text and exit
-
   allowCPU                Allow to use CPU, may slow down system (default: false)
-
   cpuAffinity             Comma separated list of CPU affinity ID to use (default: all odd number logical processors)
-
   allowIntel              Allow to use Intel GPU (OpenCL) (default: false)
-
   allowAMD                Allow to use AMD GPU (OpenCL) (default: true)
-
   allowCUDA               Allow to use Nvidia GPU (CUDA) (default: true)
-
   intelIntensity          GPU (Intel OpenCL) intensity (default: 17, decimals allowed)
-
   listAmdDevices          List of all AMD (OpenCL) devices in this system and exit (device ID: GPU name)
-
   amdDevice               Comma separated list of AMD (OpenCL) devices to use (default: all devices)
-
   amdIntensity            GPU (AMD OpenCL) intensity (default: 24.056, decimals allowed)
-
   listCudaDevices         List of all CUDA devices in this system (device ID: GPU name)
-
   cudaDevice              Comma separated list of CUDA devices to use (default: all devices)
-
   cudaIntensity           GPU (CUDA) intensity (default: auto, decimals allowed)
-
   minerJsonAPI            'http://IP:port/' for the miner JSON-API (default: http://127.0.0.1:4078 [0 disabled])
-
   minerCcminerAPI         'IP:port' for the ccminer-style API (default: 127.0.0.1:4068 [0 disabled])
-
   overrideMaxTarget       (Pool only) Use maximum target and skips query from web3
-
   customDifficulty        (Pool only) Set custom difficulity (check with your pool operator)
-
   maxScanRetry            Number of retries to scan for new work (default: 3)
-
   pauseOnFailedScans      Pauses mining after number of connection fails, including secondary and retries (default: 3)
-
   submitStale             Submit stale jobs, may create more rejected shares (default: false)
-
   abiFile                 Token abi in a file (default: '0xBTC.abi' in the same folder as this miner)
-
   web3api                 User-defined web3 provider URL (default: Infura mainnet provider [dev account, for TESTING PURPOSE only])
-
   contract                Token contract address (default: 0xbtc contract address)
-
   hashrateUpdateInterval  Interval (miliseconds) for GPU hashrate logs (default: 30000)
-
   networkUpdateInterval   Interval (miliseconds) to scan for new work (default: 15000)
-
   masterMode              Enable Master mode that virtually acts as a \"pool\" for slave miners connecting to it (default: false [requires admin/sudo mode])
-
   masterURL               Master instance IP:port, slave mode if 'masterMode' is false (default: none [if 'masterMode' is true, default: http://{localIP}:4080/])
-
   slaveUpdateInterval     (Slave only)Interval (miliseconds) to scan for new work (default: 5000)
-
   kingAddress             Add MiningKing address to nonce, only CPU mining supported (default: none)
-
   address                 (Pool only) Miner's ethereum address (default: developer's address)
-
   privateKey              (Solo only) Miner's private key
-
   minutesBetweenMints     (Solo only) Minutes between your mints, Ex. One block every 120 minutes.
-
   BlocksPerMint           (Solo only) How many blocks per mint.  Ex. Three blocks every 120 minutes
- 
   gasToMine               (Solo only) Gas price to mine in GWei (default: 3, decimals allowed; note: will override lower dynamic gas price)
-
   gasLimit                (Solo only) Gas limit to submit proof of work (default: 1704624)
-
   gasApiURL               (Solo only) Get dynamic gas price to mine from this JSON API URL (note: leave empty to disable)
-
   gasApiPath              (Solo only) JSON path expression to retrieve dynamic gas price value from 'gasApiURL'
-
   gasApiMultiplier        (Solo only) Multiplier to dynamic gas price value from 'gasApiURL' => 'gasApiPath' (note: use 0.1 for EthGasStation API)
-
   gasApiOffset            (Solo only) Offset to dynamic gas price value from 'gasApiURL' => 'gasApiPath' (after 'gasApiMultiplier', decimals allowed)
-
   gasApiMax               (Solo only) Maximum gas price to mine in GWei from API (default: 5, decimals allowed)
-
   pool                    (Pool only) URL of pool mining server (default: http://bnbtcpool.crnx.org:80)
-
   secondaryPool           (Optional) URL of failover pool mining server
-
   logFile                 Enables logging of console output to '{appPath}\\Log\\{yyyy-MM-dd}.log' (default: false)
-
   devFee                  Set developer fee in percentage (default: 2.0%, minimum: 2.0%)
 
 NOTES
@@ -175,3 +131,18 @@ Dev fee in solo mining is by sending the current reward amount after the success
 In the case if the compute load for your GPU is not >= 99%, you can adjust the intensity via (amdIntensity/cudaIntensity/intelIntensity).
 
 Please feedback your results and suggestions so that I can improve the miner. You can either add an issue in the repository, or find me in discord (Amano7). Thanks for trying out this miner!
+
+CREDITS
+Donations are encouraged to help support further development of this miner!
+Many thanks to the following developers and testers in the 0xBitcoin discord :
+lwYeo
+Azlehria
+mining-visualizer
+LtTofu/Mag517
+Infernal Toast
+0x1d00ffff
+Mikers
+TwenteMining
+Ghorge
+BRob
+Sly
