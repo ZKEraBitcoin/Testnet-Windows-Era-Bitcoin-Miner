@@ -130,7 +130,7 @@ There is a default of 2.0% dev fee (Once every 50th nonce: starting from 11th if
 Dev fee in solo mining is by sending the current reward amount after the successful minted block, using the same gas fee as provided in 'gasToMine'.
 In the case if the compute load for your GPU is not >= 99%, you can adjust the intensity via (amdIntensity/cudaIntensity/intelIntensity).
 
-Please feedback your results and suggestions so that I can improve the miner. You can either add an issue in the repository, or find me in discord (Amano7). Thanks for trying out this miner!
+Please feedback your results and suggestions so that I can improve the miner. You can either add an issue in the repository, or find me in discord (untouchable2k). Thanks for trying out this miner!
 
 CREDITS
 Donations are encouraged to help support further development of this miner!
