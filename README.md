@@ -50,6 +50,8 @@ Also must fill in account and private key in EraBitcoinMiner.conf file
 
 3) Save and run '0xMineableTokenMiner.bat file' in this directory.
 
+4) Run AEraBitcoinMiner.bat file 
+
 ### Notes
 
 Please feedback your results and suggestions so that I can improve the miner. 
